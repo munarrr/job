@@ -1,11 +1,16 @@
 import { FunctionComponent } from "react"
+import { Footer } from "./footer/Footer"
 import { Header } from "./header/Header"
 import { LayoutProps } from "./Layout.interface"
 
 
  const Layout = ({children}:LayoutProps):JSX.Element => {
       return (
-           <Header />
+            <div>
+                  <Header />
+                  {children}
+                 <Footer />
+          </div>
       )
 }
 
